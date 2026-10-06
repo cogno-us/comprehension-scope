@@ -59,4 +59,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for guidelines.
 
 ## License
 
-This project is released under the MIT License. See [`LICENSE`](./LICENSE).
+Cognous-owned material is licensed under Apache 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE). Prior license grants remain valid.
