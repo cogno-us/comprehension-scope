@@ -1,6 +1,6 @@
 # Comprehension Scope Protocol
 
-A minimal, universal protocol for making sense of claims, sources, and situations in high-entropy environments.
+A minimal protocol intended for broad use for making sense of claims, sources, and situations in high-entropy environments.
 
 This is not a truth oracle.  
 It is a **scaffold** for your own judgment.
@@ -76,6 +76,30 @@ Prefer explanations that require fewer assumptions, unless strong evidence deman
 
 Every claim is also an attempt to shape behavior.  
 See the intended action before you decide your own.
+
+---
+
+## Worked example
+
+**Hypothetical scenario:** A team report says a service responded faster in a small trial and recommends expanding deployment immediately. The report includes a signature. No actual service, trial result, or approval is asserted here.
+
+1. **Claim:** Response times improved during the trial. The recommendation to expand deployment is a separate decision.
+2. **What would make it false?** Comparable measurements showing no improvement would contradict the performance claim. First ask for the trial window, sample, baseline, method, and failure rates.
+3. **Incentives:** The team may benefit from a successful launch. That is a reason to examine the evidence, not proof that the report is false.
+4. **Alternative explanation:** Lower traffic or a different mix of requests could explain faster responses. Compare conditions before attributing the change to the service.
+5. **Action:** The report pushes toward expansion. Decide whether the evidence supports that action and who is authorized to approve it.
+
+Keep the resulting notes separate:
+
+| Part | Example note |
+| --- | --- |
+| Evidence available | A report claims faster responses and includes a signature; the underlying measurements have not been examined. The signature has not been verified. Even a valid signature would not establish that the performance claim is true. |
+| Interpretation | The service change may have improved response time. This is an inference from the report, not an independently established result. |
+| Uncertainty | The sample, comparison conditions, failure rates, and applicability beyond the trial remain unknown. |
+| Authority | The organization's existing deployment approval process determines who can authorize expansion. Neither the report nor this protocol grants that authority. |
+| Reversible next step | Request the measurements and prepare a reviewable comparison. Any further trial requires the appropriate approval, a limited scope, monitoring, and a rollback plan before it begins. |
+
+You can write these notes without adopting any Cognous software. The exercise organizes questions and a possible next step; it does not verify the report or execute the recommendation.
 
 ---
 
